@@ -352,7 +352,9 @@
   }
 
   .content__section-factors {
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
     align-items: start;
   }
 
