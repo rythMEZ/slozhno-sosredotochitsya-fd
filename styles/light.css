@@ -10,25 +10,31 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #ffeef6;
   --color-title: #ffc2e6;
-  --bg-color: #353430;
-  --color-subtitle: #353430;
-  --color-text: #353430;
   --accent-color: #ff8dcb;
+  --color-subtitle: #353430;
+  --color-title-block: #353430;
+  --color-text: #353430;
+  --button-color: #353430;
+  --color-transparency: #32312d66;
+  --color-button-transparency: #32312d66;
   --color-outline: #32312d66;
-  --header-button-color: #353430;
   --decorated-switch: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url(../images/cover-image-light.png);
+    --bg-color: #ffeef6;
     --color-title: #ffc2e6;
-    --bg-color: #353430;
-    --color-subtitle: #353430;
-    --color-text: #353430;
-    --header-button-color: #353430;
     --accent-color: #ff8dcb;
+    --color-subtitle: #353430;
+    --color-title-block: #353430;
+    --color-text: #353430;
+    --button-color: #353430;
+    --color-transparency: #32312d66;
+    --color-button-transparency: #32312d66;
     --color-outline: #32312d66;
     --decorated-switch: none;
   }
