@@ -8,8 +8,6 @@
   background-size: cover;
   background-attachment: fixed;
   text-wrap-style: pretty;
-  padding-inline: 10px;
-  padding-block: 10px;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
 }
@@ -19,6 +17,8 @@
   grid-template-rows: 1fr 1fr 1fr;
   block-size: 100vh;
   min-block-size: 668px;
+  padding-inline: 10px;
+  padding-block-start: 13px;
 }
 
 .header__theme-menu {
@@ -70,8 +70,8 @@
 .decorated-zone::before {
   content: ' ';
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   justify-self: end;
   border-top: 1px solid var(--decor-color);
   border-right: 1px solid var(--decor-color);
@@ -82,8 +82,8 @@
 .decorated-zone::after {
   content: ' ';
   position: absolute;
-  bottom: 21px;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   border-bottom: 1px solid var(--decor-color);
   border-left: 1px solid var(--decor-color);
   block-size: 25px;
@@ -92,7 +92,7 @@
 
 .decorated-zone__text {
   position: absolute;
-  inset: 0 9px auto auto;
+  inset: 10px 19px auto auto;
   display: var(--decorated-switch);
   color: var(--decor-color);
 }
@@ -122,7 +122,7 @@
   align-self: start;
   color: var(--color-title-block);
   font-weight: bold;
-  margin-block-start: 30px;
+  margin-block-start: 35px;
 }
 
 .title_decor {
@@ -131,7 +131,8 @@
 }
 
 .content {
-  padding-block-start: 30px;
+  padding-block-start: 40px;
+  padding-inline: 10px;
 }
 
 .content__section {
@@ -214,18 +215,30 @@
 }
 
 @media (width >= 768px) {
-  .page {
-    padding-inline: 20px;
-    padding-block: 20px;
-  }
-
   .content {
-    padding-block-start: 36px;
+    padding-block-start: 58px;
+    padding-inline: 20px;
   }
 
   .header {
     grid-template-rows: 1.1fr 0.6fr 0.9fr;
     grid-template-columns: 1fr 363px;
+    padding-inline: 20px;
+    padding-block-start: 29px;
+  }
+
+  .decorated-zone__text {
+    inset: 20px 29px auto auto;
+  }
+
+  .decorated-zone::before {
+    top: 19px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 21px;
+    left: 20px;
   }
 
   .header__theme-menu {
@@ -245,6 +258,7 @@
   .header__subtitle {
     grid-column: 2;
     align-self: start;
+    margin-block-start: 43px;
   }
 
   .content__section {
@@ -330,6 +344,7 @@
   .header {
     grid-template-rows: 1.1fr 0.88fr 0.9fr;
     grid-template-columns: 1fr 490px;
+    padding-block-start: 19px;
   }
 
   .header__theme-menu {
@@ -342,7 +357,7 @@
 
   .header__subtitle {
     align-self: start;
-    margin-block-start: 15px;
+    margin-block-start: 27px;
   }
 
   .header__theme-menu-list {
@@ -351,7 +366,8 @@
   }
 
   .content {
-    padding-block-start: 40px;
+    padding-block-start: 58px;
+    padding-inline: 19px;
   }
 
   .content__section {
