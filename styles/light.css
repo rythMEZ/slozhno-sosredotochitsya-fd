@@ -21,6 +21,7 @@
   --color-button-transparency: #32312d66;
   --color-outline: #32312d66;
   --decorated-switch: none;
+  --decor-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,5 +38,6 @@
     --color-button-transparency: #32312d66;
     --color-outline: #32312d66;
     --decorated-switch: none;
+    --decor-color: #353430;
   }
 }
